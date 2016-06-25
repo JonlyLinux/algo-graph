@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLACK	graph_present.h	/^	BLACK,$/;"	e	enum:vertex_color_e
+GRAY	graph_present.h	/^	GRAY,$/;"	e	enum:vertex_color_e
+INIT_LIST_HEAD	list.h	/^static inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f
+LIST_HEAD	list.h	21;"	d
+LIST_HEAD_INIT	list.h	20;"	d
+LIST_POISON1	list.h	10;"	d
+LIST_POISON2	list.h	11;"	d
+POISON_POINTER_DELTA	list.h	9;"	d
+VERTEX_NUM	graph_present.h	5;"	d
+WHITE	graph_present.h	/^	WHITE,$/;"	e	enum:vertex_color_e
+__GRAPH_PRESENT_H__	graph_present.h	2;"	d
+__GRAPH_SEARCH_H__	graph_search.h	2;"	d
+__LIST_H__	list.h	2;"	d
+__list_add	list.h	/^static inline void __list_add(struct list_head *new,$/;"	f
+__list_del	list.h	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f
+adjnode_s	graph_present.h	/^typedef struct adjnode_s {$/;"	s
+adjnode_t	graph_present.h	/^} adjnode_t;$/;"	t	typeref:struct:adjnode_s
+color	graph_present.h	/^	vertex_color_t color;$/;"	m	struct:vertex_s
+compile_opts	Makefile	/^compile_opts=-g -c -fstrict-aliasing$/;"	m
+compiler	Makefile	/^compiler=gcc$/;"	m
+container_of	list.h	109;"	d
+data	graph_present.h	/^	int data;$/;"	m	struct:vertex_s
+entry	graph_present.h	/^	struct list_head entry;$/;"	m	struct:adjnode_s	typeref:struct:adjnode_s::list_head
+graph_adjlist	graph_present.h	/^list_head_t graph_adjlist[VERTEX_NUM];$/;"	v
+graph_adjmtrx	graph_present.h	/^unsigned int  graph_adjmtrx[VERTEX_NUM][VERTEX_NUM] = {$/;"	v
+graph_bfs	graph_search.c	/^void graph_bfs(adjnode_t *graph_adjlist, int num, int index)$/;"	f
+graph_data	graph_present.h	/^unsigned char graph_data[VERTEX_NUM] = {'r', 's', 't', 'u', 'v', 'w', 'x', 'y'};$/;"	v
+graph_dfs	graph_search.c	/^void graph_dfs(adjnode_t *graph_adjlist, int num, int index)$/;"	f
+graph_vertexs	graph_present.h	/^vertex_t graph_vertexs[VERTEX_NUM];$/;"	v
+graph_vertexs_num	graph_present.h	/^unsigned int graph_vertexs_num;$/;"	v
+id	graph_present.h	/^	int id;$/;"	m	struct:vertex_s
+index	graph_present.h	/^	int index;$/;"	m	struct:adjnode_s
+index	graph_present.h	/^	int index;$/;"	m	struct:vertex_s
+init_adjlist	graph_present.c	/^void init_adjlist(void)$/;"	f
+init_vertexs	graph_present.c	/^void init_vertexs(void)$/;"	f
+language_std	Makefile	/^language_std = -std=gnu99$/;"	m
+ld_opts	Makefile	/^ld_opts=-lpthread$/;"	m
+list_add	list.h	/^static inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	list.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_del	list.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_empty	list.h	/^static inline int list_empty(const struct list_head *head)$/;"	f
+list_entry	list.h	120;"	d
+list_first_entry	list.h	131;"	d
+list_for_each	list.h	139;"	d
+list_head	list.h	/^struct list_head {$/;"	s
+list_head_t	list.h	/^typedef struct list_head list_head_t;$/;"	t	typeref:struct:list_head
+list_is_last	list.h	/^static inline int list_is_last(const struct list_head *list,$/;"	f
+list_move	list.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	list.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+next	list.h	/^	struct list_head *next;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+offsetof	list.h	107;"	d
+optimize_opts	Makefile	/^optimize_opts = -O3$/;"	m
+prev	list.h	/^	struct list_head *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+target	Makefile	/^target=graph$/;"	m
+vertex_color_e	graph_present.h	/^typedef enum vertex_color_e {$/;"	g
+vertex_color_t	graph_present.h	/^} vertex_color_t;$/;"	t	typeref:enum:vertex_color_e
+vertex_s	graph_present.h	/^typedef struct vertex_s {$/;"	s
+vertex_t	graph_present.h	/^} vertex_t;$/;"	t	typeref:struct:vertex_s
+warning_opts	Makefile	/^warning_opts = -Wunused-function $/;"	m
