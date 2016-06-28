@@ -1,6 +1,9 @@
 #ifndef __LIST_H__
 #define __LIST_H__
 
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
 /*
  *  * These are non-NULL pointers that will result in page faults
  *   * under normal circumstances, used to verify that nobody uses
@@ -136,10 +139,22 @@ static inline int list_empty(const struct list_head *head)
  *   * @pos:    the &struct list_head to use as a loop cursor.
  *    * @head:    the head for your list.
  *     */
-#define list_for_each(pos, head) \
+//#define list_for_each(pos, head) \
 	for (pos = (head)->next; prefetch(pos->next), pos != (head); \
+			pos = pos->next)
+#define list_for_each(pos, head) \
+	for (pos = (head)->next; pos != (head); \
 			pos = pos->next)
 
 
+static inline struct list_head *list_get_first(struct list_head *head)
+{
+	return head->next;
+}
+
+static inline struct list_head *list_get_last(struct list_head *head)
+{
+	return head->prev;
+}
 
 #endif
